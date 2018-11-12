@@ -81,7 +81,7 @@ Suite à ce brainstorming, vous ajouterez un fichier `TO_DO.txt` (ou `TO_DO.md`)
 + <span style='color:blue'>Faire un test de couverture de code de votre MVP et pousser le bilan obtenu vers votre dépôt distant sur GitLab.</span>
 
 
-
+Et on peut maintenant passer à l'[objectif 2](./TemplateProject_2048.md). 
 
 
 
