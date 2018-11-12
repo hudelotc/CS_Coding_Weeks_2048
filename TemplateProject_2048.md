@@ -58,7 +58,6 @@ Ce concept de MVP a été introduit par Eric Ries, l'auteur de [The Lean Startup
  + **Sprint 4** : **Jouer !**	
 
  	+ [**Fonctionnalité 6** : Faire jouer un joueur](./2048_S4_Playing.md)
- 	+ [**Fonctionnalité 7** : Ajout d'un timer](./2048_S4_Timer.md)
  	
 
 ### Objectif 2 : Un 2048 avec une interface graphique (Amélioration du MVP) (JOUR 3)

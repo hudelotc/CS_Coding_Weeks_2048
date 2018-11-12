@@ -17,6 +17,17 @@ Si ce n'est pas déjà fait, [créer un projet Pycharm](./pycharm.md) que vous a
 
 Comme vous devrez apprendre à le faire de manière systématique pour tout travail de développement informatique, vous devez passer le projet **`game2048`** sous Git.
 
+
+Pour commencer, et pour comprendre git, faites le rapide tutorial disponible [ici](http://rogerdudler.github.io/git-guide/index.fr.html). 
+D'autres tutoriaux très bien:
+ 
+ + [http://marklodato.github.io/visual-git-guide/index-en.html](http://marklodato.github.io/visual-git-guide/index-en.html)
+ + [https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git](https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git)
+ + ...
+
+
+Ensuite nous allons mettre en place un dépôt git pour notre projet.
+
 + Depuis Pycharm, vous pouvez le faire depuis le menu **(`VCS | Enable Version Control Integration`)**.
 + Faire un premier `commit`contenant le fichier `__init__.py`
 +  Créer un dépôt **`2048`** sur GitLab qui vous servira de **depôt distant**.
