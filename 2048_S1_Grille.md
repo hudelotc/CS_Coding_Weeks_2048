@@ -105,7 +105,7 @@ Dans un souci de généricié, on peut aussi choisir de definir la taille de la 
 
 Vous allez maintenant procéder par itérations pour terminer l'écriture la  fonctionnalité *Représenter la grille de jeu*  dont on rappelle le critère d'acceptance : **avoir un espace de jeu avec deux tuiles (`2` ou `4`) aléatoirement placées dans l'espace de jeu**.
 
-Chaque itération commence par un test qui échoue mais qui est écrit uniquement s'il apporte un nouveau comportement au système. A la fin de chaque itération, il faut donc se poser la question du prochain test à écrire. Dans notre cas, nous n'avons pas encore traiter l'ajout des deux tuiles initiales à notre grille de jeu et le prochain test à écrire peut donc concerner l'ajout de ces deux tuiles dans la grille de jeu.
+Chaque itération commence par un test qui échoue mais qui est écrit uniquement s'il apporte un nouveau comportement au système. A la fin de chaque itération, il faut donc se poser la question du prochain test à écrire. Dans notre cas, nous n'avons pas encore traité l'ajout des deux tuiles initiales à notre grille de jeu et le prochain test à écrire peut donc concerner l'ajout de ces deux tuiles dans la grille de jeu.
 
 ##### Positionner deux tuiles de valeur 2 ou 4 dans la grille de jeu.
 
@@ -152,7 +152,7 @@ def test_get_all_tiles():
 ```
 
 
-Plus précisemment, une nouvelle tuile ajoutée au jeu à 90 % de chance d'avoir la valeur 2 et 10% la valeur 4. On ne testera pas cet aspect mais votre code devra pouvoir ajouter des tuiles au jeu respectant cette propriété.
+Plus précisement, une nouvelle tuile ajoutée au jeu à 90 % de chance d'avoir la valeur 2 et 10% la valeur 4. On ne testera pas cet aspect mais votre code devra pouvoir ajouter des tuiles au jeu respectant cette propriété.
 
  + **Itération 3 - Test : une nouvelle tuile est placée aléatoirement dans une case disponible de la grille de jeu.**
 
@@ -246,7 +246,7 @@ L'ouverture du fichier `index.html`dans le répertoire `htmlcov`vous permet de v
 
 
 
-vous pouvez maintenant passer à la [**Fonctionnalité 2** : Afficher une grille de jeu.](./2048_S1_Grille.md).
+vous pouvez maintenant passer à la [**Fonctionnalité 2** : Afficher une grille de jeu.](./2048_S1_Display_Grille.md).
  
  
  

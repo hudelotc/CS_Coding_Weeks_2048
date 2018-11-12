@@ -31,4 +31,4 @@ On peut donc esquisser à partir de ce MVP une première maquette comme ci-desso
 
 ![Vue du jeu 2048](./Images/2048_maquette.png)
 
-Vous pouvez maintenant continuez par le [Sprint 0 : Reflexion autour de la conception](./Conception.md).
+Vous pouvez maintenant continuez par le [Sprint 0 : Reflexion autour de la conception](./Sprint0Conception.md).
