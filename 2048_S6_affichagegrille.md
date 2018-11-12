@@ -6,7 +6,7 @@ Il s'agit ici de mettre en place votre interface Tkinter pour l'affichage du jeu
 
 ## Etape 1 : Création de la structure Tkinter pour afficher la grille de jeu.
 
-L'étape 1 consiste en l'affiche de la grille de jeu initiale en Tkinter. Dans cette étape, on s'intéressera uniquement en l'affichage de la grille. Il n'y aura pas d'actions associées aux différents objets de la grille.
+L'étape 1 consiste en l'affichage de la grille de jeu initiale en Tkinter. Dans cette étape, on s'intéressera uniquement à l'affichage de la grille. Il n'y aura pas d'actions associées aux différents objets de la grille.
 
 
 Pour cette étape, il est nécessaire de :
@@ -33,18 +33,18 @@ A ce stade, vous devriez avoir ceci à l'exécution de votre programme.
 
 ![Vue du jeu 2048 en Tkinter](./Images/gui2048_step1.png)
 
-Nous avons donc deux fenêtres. A ce stade, vous pouvez-vous demander pourquoi! Vous comprendrez l'utilité de ces deux fenêtres par la suite.
+Nous avons donc deux fenêtres. A ce stade, vous pouvez-vous demander pourquoi ! Vous comprendrez l'utilité de ces deux fenêtres par la suite.
 
 ###  Representation de la grille de tuiles
 
 
 Nous allons maintenant créer et afficher la grille de jeu en elle-même avec les différentes tuiles. Il vous faut donc :
 
-+ Initialiser une grille de jeu `grid_game` à l'aide de la fonction `init_game` de votre module `grid_2048`. Les paramètres du jeu, c'est-à-dire la taille de la grille est défini arbitrairement à une taille de 4 qui doit être un paramètre par défaut de votre fonction `init_game`.
++ Initialiser une grille de jeu `grid_game` à l'aide de la fonction `init_game` de votre module `grid_2048`. Les paramètres du jeu, c'est-à-dire la taille de la grille est définie arbitrairement à une taille de 4 qui doit être un paramètre par défaut de votre fonction `init_game`.
 + La taille de la grille de jeu va être une caractéristique qui va être utile dans toute la suite et nous allons donc la stocker dans une variable `2048_grid_size` qui sera utilisée comme une variable globale dans la suite.
 + Pour représenter notre grille de jeu qui est donc une grille de cellules, chaque cellule permettant de représenter une tuile, nous allons d'abord définir une `Frame` qui représentera le backgroud de notre jeu et qui *contiendra* les différenres cellules. Créer donc la variable `background` qui fera référence à un widget `Frame` représentant le fond de notre jeu.
 + Créer une variable `graphical_grid` de type `list`et qui permettra de stocker les différentes cellules. Pour le moment, cette variable sera affectée avec une liste vide.
-+ Nous allons maintenant créer les widgets permettant de représenter les tuiles. Chaque tuile sera représenter par un widget de type `Frame` et associée à la `Frame` `background`. La couleur de fond et du contenu sera elle dépendante de la valeur de la tuile. 
++ Nous allons maintenant créer les widgets permettant de représenter les tuiles. Chaque tuile sera représentée par un widget de type `Frame` et associée à la `Frame` `background`. La couleur de fond et du contenu sera elle dépendante de la valeur de la tuile. 
 	+ A ce stade, il est donc nécessaire de définir les couleurs des différentes valeurs de tuiles ainsi que la couleur du fond associé. Nous vous donnons ci-dessous un ensemble de constantes qui définissent ces différents paramétres mais vous pouvez bien sûr les modifier pour un affichage qui vous sera propre.
 
 ```PYTHON
@@ -62,13 +62,13 @@ TILES_FG_COLOR = {0: "#776e65", 2: "#776e65", 4: "#776e65", 8: "#f9f6f2", \
 TILES_FONT = {"Verdana", 40, "bold"}
 ```
    		
-A l'aide de ces différentes constantes, vous pouvez donc maintenant, à l'aide d'une boucle, créer les différentes `Frame` correspondant à vos différentes cellules. On ne s'intéresse ici qu'à créer la structure d'affichage du jeu et on ne s'occupe pas encore à ce stage d'afficher les valeurs dans les cellules correspondant à la case dans la grille de jeu `grid_game`. On considerera donc que la grille de jeu est vide et choisira donc comme couleur de fond la couleur associée à la valeur `0`.
+A l'aide de ces différentes constantes, vous pouvez donc maintenant, à l'aide d'une boucle, créer les différentes `Frame` correspondant à vos différentes cellules. On ne s'intéresse ici qu'à créer la structure d'affichage du jeu et on ne s'occupe pas encore à ce stade d'afficher les valeurs dans les cellules correspondant à la case dans la grille de jeu `grid_game`. On considerera donc que la grille de jeu est vide et choisira donc comme couleur de fond la couleur associée à la valeur `0`.
 
 Vous devriez à ce stade, avoir ceci au moment où vous exécutez votre programme.
 
 ![Vue du jeu 2048 en Tkinter](./Images/gui2048_step2.png)
 
-Nous avons donc à ce stage deux objets grille :
+Nous avons donc à ce stade deux objets grille :
 + `grid_game` qui contient les données du jeu, donc les données à afficher (le **MODELE**).
 + `graphical_grid`, notre structure de données Tkinter qui contient la présentation de l'interface graphique (la **VUE**).
 
@@ -78,7 +78,7 @@ Cette manière de procéder est très classique en développement d'interfaces g
 + Une **vue (View)** qui contient la présentation de l'interface graphique.
 + Un **contrôleur (Controller)** qui contient la logique concernant les actions effectuées par l'utilisateur.
 
-Nous avons donc pour l'instant respecter ce principe avec au moins les deux premiers modules. Il nous faut cependant encore connecter la vue au modèle et c'est ce que nous allons faire tout de suite.
+Nous avons donc pour l'instant respecté ce principe avec au moins les deux premiers modules. Il nous faut cependant encore connecter la vue au modèle et c'est ce que nous allons faire tout de suite.
 
 ###  Affichage des valeurs de la grille réelle de jeu.
 
@@ -100,7 +100,7 @@ Pour une grille initiale correspondant à `[[2, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0
 ## Etape 2 : Mise en place des actions du joueur via l'interface graphique
 
 
-Nous devons maintenant travailler sur la mise en des évènements de notre interface pour répondre aux actions de l’utilisateur. Pour jouer, l'utilisateur a juste besoin d'indiquer une direction et il semble donc naturel de le faire via les 4 flèches de son clavier. Nous sommes donc en présence d'un évènement de type `KeyPress` et vous pourrez retrouver les différentes manières de nommer les touches [ici](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/key-names.html) ou dans ce [tutorial](http://tkinter.fdex.eu/doc/event.html).
+Nous devons maintenant travailler sur le traitement des évènements de notre interface pour répondre aux actions de l’utilisateur. Pour jouer, l'utilisateur a juste besoin d'indiquer une direction et il semble donc naturel de le faire via les 4 flèches de son clavier. Nous sommes donc en présence d'un évènement de type `KeyPress` et vous pourrez retrouver les différentes manières de nommer les touches [ici](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/key-names.html) ou dans ce [tutorial](http://tkinter.fdex.eu/doc/event.html).
 
 Ecrire une fonction `key_pressed(event)` qui exécute les actions de jeu, i.e. les directions données par l'utilisateur via son clavier, sur la grille de jeu et met à jour l'interface graphique. 
 
@@ -119,7 +119,7 @@ Nous avons maintenant terminé cette fonctionnalité, il vous faut :
 
 
 
-Nous avons maintenant tous les ingrédients pour jouer à notre jeu. Il s'agit de la **Fonctionnalité 6** : [Mettre en orchestre le jeu](./2048_S4_Playing.md)
+Nous pouvons maintenant ajouter des moyens graphiques de configurer le jeu. Il s'agit de la [Fonctionnalité 9 : Permettre la configuration du jeu via l'interface graphique](./2048_S6_configgrille.md)
 
 
 

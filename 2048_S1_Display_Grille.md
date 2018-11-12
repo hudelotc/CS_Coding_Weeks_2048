@@ -40,7 +40,7 @@ def test_grid_to_string():
 En s'inspirant de l'étape précedente, écrire le test et le code permettant de passer le test pour l'affichage de la grille de jeu prenant en compte la largeur des tuiles et donc la longueur maximale des nombres ou des symboles à afficher dans chaque case.
 Pour être uniforme dans vos solutions, il vous est suggéré d' écrire :
 
-+ une fonction `grid_to_string_with_size(grid,n)` qui transforme la grille de jeu en une chaîne de caractères bien formatté et prenant en compte la longueur des symboles à afficher.
++ une fonction `grid_to_string_with_size(grid,n)` qui transforme la grille de jeu en une chaîne de caractères bien formatée et prenant en compte la longueur des symboles à afficher.
 + une fonction `long_value(grid)`qui renvoie la longueur de la plus grande chaîne de caractères dans la grille de jeu.
 
 
@@ -54,7 +54,7 @@ La dernière étape est de prendre en compte le thème dans l'affichage de la gr
 THEMES = {"0": {"name": "Default", 0: "", 2: "2", 4: "4", 8: "8", 16: "16", 32: "32", 64: "64", 128: "128", 256: "256", 512: "512", 1024: "1024", 2048: "2048", 4096: "4096", 8192: "8192"}, "1": {"name": "Chemistry", 0: "", 2: "H", 4: "He", 8: "Li", 16: "Be", 32: "B", 64: "C", 128: "N", 256: "O", 512: "F", 1024: "Ne", 2048: "Na", 4096: "Mg", 8192: "Al"}, "2": {"name": "Alphabet", 0: "", 2: "A", 4: "B", 8: "C", 16: "D", 32: "E", 64: "F", 128: "G", 256: "H", 512: "I", 1024: "J", 2048: "K", 4096: "L", 8192: "M"}}
 ```
 
-Ici, votre code devrait pouvoir passer les tests ci-dessous que vous pouvez bien sûr compléter pour être plus exaustifs:
+Ici, votre code devrait pouvoir passer les tests ci-dessous que vous pouvez bien sûr compléter pour être plus exhaustifs :
 
 
 ```PYTHON
@@ -95,7 +95,7 @@ Vous venez de terminer une fonctionnalité donc n'oubliez pas de :
 + <span style='color:blue'>Faire un commit.</span> 
 + <span style='color:blue'>Pousser (Push) votre code vers votre dépôt distant sur GitLab.</span> 
 
-Maintenant que nous avons notre grille de jeu, nous pouvons maintenant rajouter un peu d'interactivité en permettant à un joueur de jouer au 2048. Il s'agit de la [**Fonctionnalité 3** : Faire jouer le joueur](./2048_S1_Donnerinstruction.md).
+Maintenant que nous avons notre grille de jeu, nous pouvons maintenant rajouter un peu d'interactivité en permettant à un joueur de jouer au 2048. Il s'agit de la [**Fonctionnalité 3** : Faire jouer le joueur](./2048_S2_joueur.md).
    
     
     

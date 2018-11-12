@@ -3,7 +3,7 @@
 
 L'objectif de cette fonctionnalité est de rendre le jeu interactif en permettant à un joueur de donner ses instructions de jeu. Pour ce MVP, nous nous contenterons d'instructions textuelles que l'utilisateur donnera via l'entrée standard.
 
-On peut ici prendre un peu le temps de reflechir à la conception de notre jeu. Dans le **Sprint 1**, nous avons défini dans le module `grid_2018` de notre projet, un ensemble de fonctions qui vont nous permettre de manipuler notre grille de jeu. Ce module a été conçu sans prendre en compte l'aspect interaction du jeu et on peut donc penser que ce module a un caractère générique, quelque soit les modalités d'interaction.
+On peut ici prendre un peu le temps de reflechir à la conception de notre jeu. Dans le **Sprint 1**, nous avons défini dans le module `grid_2018` de notre projet, un ensemble de fonctions qui vont nous permettre de manipuler notre grille de jeu. Ce module a été conçu sans prendre en compte l'aspect interaction du jeu et on peut donc penser que ce module a un caractère générique, quelles que soient les modalités d'interaction.
 
 Ici, pour cette fonctionnalité, nous cherchons à mettre en place les interactions avec le joueur et selon que l'on utilise des interactions textuelles ou une interface graphique et les évènements associés, on risque donc d'avoir une solution spécifique au type d'interaction. 
 
@@ -44,7 +44,7 @@ Avec ce principe, ecrivez le test permettant de tester la fonction `read_player_
 
 Dans l'étape précédente, nous n'avons pas évoqué le cas où l'utilisateur rentre une commande de jeu qui n'est pas valide. 
 
-Dans cette étape, il faut donc améliorez la fonction `read_player_command()`de telle sorte que si la commande donnée n'est pas correcte, il sera demandé à l'utilisateur de resaisir son choix de jeu.
+Dans cette étape, il faut donc améliorer la fonction `read_player_command()`de telle sorte que si la commande donnée n'est pas correcte, il sera demandé à l'utilisateur de resaisir son choix de jeu.
 
 
 ## Etape 3 : Permettre à l'utilisateur de choisir la taille de la grille de jeu ainsi que le thème du jeu.
@@ -56,7 +56,7 @@ Une première question à vous poser pour cette étape concerne la conception de
 Faut-il définir de nouvelles fonctions pour permettre ces deux choix ou est-ce qu'une modification de la fonction `read_player_command()` suffit ?
 
 
-Dans le déroulé du jeu, la fonction `read_player_command()` va être appelée à chaque coup du joeur. Alors, que proposez-vous ?
+Dans le déroulé du jeu, la fonction `read_player_command()` va être appelée à chaque coup du joueur. Alors, que proposez-vous ?
 
 Nous allons bien evidemment définir deux autres fonctions qu'il faudra  pour saisir la taille de la grille voulue par le joueur (`read_size_grid()`) et le thème choisi (`read_theme_grid()`).
 
@@ -68,7 +68,7 @@ Comme à chaque fin de sprint de fonctionnalité, il vous faut :
 
 
  Nous allons pouvoir maintenant nous intéresser à la conception de la logique du jeu en elle-même par la gestion du déplacement des différentes tuiles.
-Il s'agit de la [**Fonctionnalité 4** : Faire jouer le joueur](./2048_S1_Donnerinstruction.md)
+Il s'agit de la [**Fonctionnalité 4** : Gestion des déplacements](./2048_S3_regles.md)
 
 
 

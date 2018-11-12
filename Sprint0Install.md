@@ -48,4 +48,4 @@ Vous allez maintenant ajouter votre binôme et votre enseignant comme collaborat
 Il vous sera demandé plusieurs fois le long du projet et des séances de pousser votre code sur le dépôt distant. Pour ceux d'entre vous qui débutent, on se contentera de suivre un workflow classique sans branches, avec des `commit` sur la branche principale `master`chaque fois que cela vous est demandé et systématiquement en fin de séance.  Pour ceux d'entre vous qui sont déjà très familiarisés avec git, vous pourrez adopter la démarche plus classique consistant à développer une branche par fonctionnalité et à fusionner ensuite dans la branche `master`.
 
 
-Vous pouvez maintenant continuez par le [Sprint 0 : Analyse du problème] (Sprint0Analyse.md).
+Vous pouvez maintenant continuez par le [Sprint 0 : Analyse du problème](./Sprint0Analyse.md).

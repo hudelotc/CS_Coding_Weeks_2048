@@ -45,10 +45,10 @@ Ce concept de MVP a été introduit par Eric Ries, l'auteur de [The Lean Startup
 
  + **Sprint 1 : Mise en place des données du jeu**
  	+ [**Fonctionnalité 1** : Représenter une grille de jeu.](./2048_S1_Grille.md)
- 	+ [**Fonctionnalité 2** : Afficher une grille de jeu.](./2048_S1_Grille.md)
+ 	+ [**Fonctionnalité 2** : Afficher une grille de jeu.](./2048_S1_Display_Grille.md)
  		
  + **Sprint 2** : **Actions des joueurs**
- 	+ [**Fonctionnalité 3** : Faire jouer le joueur](./2048_S1_Donnerinstruction.md) - Donner une instruction de jeu.
+ 	+ [**Fonctionnalité 3** : Faire jouer le joueur](./2048_S2_joueur.md) - Donner une instruction de jeu.
 
  		
  + **Sprint 3** : **Gestions des déplacements des tuiles**

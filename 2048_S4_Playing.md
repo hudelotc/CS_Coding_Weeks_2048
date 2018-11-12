@@ -38,7 +38,7 @@ qui permettent de demander et de saisir les choix de l'utilisateur.
 Il s'agit maintenant de permettre à un joueur de jouer. Il s'agit donc d'écrire la fonction `game_play()` qui :
 
 + Demande à l'utilisateur de choisir une taille et un thème de grille.  
-+ Initialisee une grille de jeu qui respectent les paramètres demandés.
++ Initialise une grille de jeu qui respectent les paramètres demandés.
 + L'affiche
 + Met en place une boucle permettant de mettre en oeuvre les actions suivantes si le jeu n'est pas terminé
 	+ Demande à l'utilisateur de saisir son choix de direction

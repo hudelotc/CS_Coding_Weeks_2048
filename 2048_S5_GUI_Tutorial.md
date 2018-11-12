@@ -106,9 +106,9 @@ root.mainloop()
 
 ```
 
-Attention, pour les utilisateurs de MAC OSX, les couleurs peuvent ne pas être prise en compte. Des indications sont disponibles [ici](https://stackoverflow.com/questions/1529847/how-to-change-the-foreground-or-background-colour-of-a-tkinter-button-on-mac-os).
+Attention, pour les utilisateurs de MAC OSX, les couleurs peuvent ne pas être prises en compte. Des indications sont disponibles [ici](https://stackoverflow.com/questions/1529847/how-to-change-the-foreground-or-background-colour-of-a-tkinter-button-on-mac-os).
 
-Cet exemple illustre comment initier un traitement depuis une interface graphique. Ici, la commande `quit` est associé au premier bouton pour quitter la fenêtre et la commande définie par la fonction `write_text()` est associée au deuxième bouton.
+Cet exemple illustre comment initier un traitement depuis une interface graphique. Ici, la commande `quit` est associée au premier bouton pour quitter la fenêtre et la commande définie par la fonction `write_text()` est associée au deuxième bouton.
 
 
 
@@ -150,7 +150,7 @@ Le widget `Button` prend en paramètre un texte à afficher et une fonction à e
 
 La fonction à exécuter ne prend pas de paramètre et pour utiliser une foncion déjà ecrite il faut l'encapsuler avec le module [`partial`](https://docs.python.org/2/library/functools.html). 
 
-A l'aide du tutorial disponible [ici](https://www.python-course.eu/tkinter_radiobuttons.php), explorez les autres widgets de Tkinter comme par exemples les [`Radiobutton`](https://www.python-course.eu/tkinter_radiobuttons.php) ou les [`Checkbutton`] (https://www.python-course.eu/tkinter_checkboxes.php).
+A l'aide du tutorial disponible [ici](https://www.python-course.eu/tkinter_radiobuttons.php), explorez les autres widgets de Tkinter comme par exemples les [`Radiobutton`](https://www.python-course.eu/tkinter_radiobuttons.php) ou les [`Checkbutton`](https://www.python-course.eu/tkinter_checkboxes.php).
 
 
 ## Les Conteneurs
@@ -179,7 +179,7 @@ root.mainloop()
 
 ## Les évènements
 
-Il est possible de récupérer des événements, comme la frappe d'une touche ou un clic de souris pour effectuer un traitement spécial. Pour qu'un widget puisse traiter les événements, il faut que celui-ci ait le focus. Généralement, un widget prend le focus lorsque l'on clique dessus. Les événements peuvent ensuite être traités par une fonction
+Il est possible de récupérer des événements, comme la frappe d'une touche ou un clic de souris pour effectuer un traitement spécial. Pour qu'un widget puisse traiter les événements, il faut que celui-ci ait le focus. Généralement, un widget prend le focus lorsque l'on clique dessus. Les événements peuvent ensuite être traités par une fonction.
 
 
 Le code ci-dessous que vous devez tester affiche *Hello* en fonction des clics ou de l'appui d'une des touches du clavier.
@@ -205,11 +205,11 @@ entry.bind('<KeyPress>', print_bonjour)
 root.mainloop()
 ```
 
-Prenez le temps de lire rapidement ce [très bon tutoriel] (http://tkinter.fdex.eu/doc/event.html) concernant les évènements en Tkinter.
+Prenez le temps de lire rapidement ce [très bon tutoriel](http://tkinter.fdex.eu/doc/event.html) concernant les évènements en Tkinter.
 
-Vous pouvez maintenant vous atteler à votre 2048 avec interface graphique. N'hésitez pas à revenir vers les différents tutoriaux mentionnés par approfondir votre connaissance de Tkinter.
+Vous pouvez maintenant vous atteler à votre 2048 avec interface graphique. N'hésitez pas à revenir vers les différents tutoriaux mentionnés pour approfondir votre connaissance de Tkinter.
 
-Nous pouvons maintenant passer à notre 
+Nous pouvons maintenant passer à notre [Fonctionnalité 8 : Affichage de la grille de jeu dans une fenêtre Tkinter](./2048_S6_affichagegrille.md).
 
 
 
