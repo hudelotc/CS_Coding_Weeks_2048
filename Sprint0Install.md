@@ -51,12 +51,31 @@ Votre projet  **`2048`** est prêt pour la suite.
 
 ### Ajout de collaborateurs
 
-Vous allez maintenant ajouter votre binôme et votre enseignant comme collaborateir de votre dépôt. Pour cela, allez sur votre depôt GitLab et choisissez le menu `Settings | Members` dans la fenêtre de gauche. Ajouter votre binôme et votre enseignant comme collaborateur. Votre binôme sera *Developer* et votre enseignant sera *Reporter*.
+Vous allez maintenant ajouter votre binôme et votre enseignant comme collaborateur de votre dépôt. Pour cela, allez sur votre depôt GitLab et choisissez le menu `Settings | Members` dans la fenêtre de gauche. Ajouter votre binôme et votre enseignant comme collaborateur. Votre binôme sera *Developer* et votre enseignant sera *Reporter*. 
 
 
 ## Déposer sur GitLab
 
-Il vous sera demandé plusieurs fois le long du projet et des séances de pousser votre code sur le dépôt distant. Pour ceux d'entre vous qui débutent, on se contentera de suivre un workflow classique sans branches, avec des `commit` sur la branche principale `master`chaque fois que cela vous est demandé et systématiquement en fin de séance.  Pour ceux d'entre vous qui sont déjà très familiarisés avec git, vous pourrez adopter la démarche plus classique consistant à développer une branche par fonctionnalité et à fusionner ensuite dans la branche `master`.
+Il vous sera demandé plusieurs fois le long du projet et des séances de pousser votre code sur le dépôt distant. 
 
+Pour ceux d'entre vous qui débutent, il serait plus facile de se contenter au début de suivre un workflow classique sans branches, avec des `commit` sur la branche principale `master`chaque fois que cela vous est demandé et systématiquement en fin de séance. Pour ceux d'entre vous qui sont déjà très familiarisés avec git, vous savez que la démarche plus classique consiste à développer une branche par fonctionnalité et à fusionner ensuite dans la branche `master`.
+
+Nous allons procéder comme suit pour le projet :
+
++ Vous aurez un dépôt distant commun pour le binôme.
++ Chaque membre du binôme construira une branche qui lui sera proche.
+
+```
+ git checkout -b projet_membre_x
+ git push origin projet_membre_x
+```
+ 
+ 
+ + A chaque fois que vous terminerez une fonctionnalité, vous procederez alors à un `merge request` avec la commande
+
+ `git merge <branch>`
+ 
+ + Il vous faudra donc pour ne pas avoir trop de problèmes sur cette opération, vous mettre d'accord sur votre code (en faisant une sorte de cycle de [pair programming](pair programming))
+ 
 
 Vous pouvez maintenant continuez par le [Sprint 0 : Analyse du problème](./Sprint0Analyse.md).
