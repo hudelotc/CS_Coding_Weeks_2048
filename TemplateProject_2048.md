@@ -72,5 +72,7 @@ Lors du test de votre MVP, vous avez du trouver le jeu sans interface graphique 
 
 
 ### Objectif 3 : Un 2048 avec gestion des joueurs, de leur score, suggestions de coups et cie (JOUR 4)
-( A venir)
+
+Vous avez au travers des deux objectifs précédents découvert des méthodes de développement et notamment la démarche d'analyse, de conception et de développement. Les étapes d'analyse et de conception doivent vous permettre  de découper un objectif en `Sprint` composé de différentes **fonctionnalités**. 
+Appliquer tout cela pour réaliser l'objectif 3. Vous devrez déposer avec votre projet, un fichier décrivant le découpage proposé et réalisé.
 
